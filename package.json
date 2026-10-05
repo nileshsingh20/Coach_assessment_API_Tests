@@ -1,0 +1,23 @@
+{
+  "name": "coach-assess-api-tests",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TypeScript + Playwright API automation suite for the Coach Assess public API",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed-report": "playwright test --reporter=list,html",
+    "test:ui": "playwright test --ui",
+    "test:assessments": "playwright test tests/assessments",
+    "test:candidates": "playwright test tests/candidates",
+    "test:invitations": "playwright test tests/invitations",
+    "test:attempts": "playwright test tests/attempts",
+    "test:results": "playwright test tests/results",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.47.0",
+    "@types/node": "^20.14.0",
+    "dotenv": "^16.4.5",
+    "typescript": "^5.5.0"
+  }
+}
